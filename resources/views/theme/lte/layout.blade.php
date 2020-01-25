@@ -19,6 +19,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/skins/_all-skins.min.css")}}">
+  <!--Aquie creo mi link para acceso a mi CSS personalizado-->
+  <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
     <!--Aqui es para agregar estilos especificos para una plantilla -->
   @yield("styles")
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

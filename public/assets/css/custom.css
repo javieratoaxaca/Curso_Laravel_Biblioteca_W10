@@ -1,0 +1,5 @@
+/*Aqui creo la  opcion de requerido que se manejara dentro de mi clase que esta en mi admin.menu.crear*/
+label.requerido::after{
+    content: " *";
+    color: darkred; /* color:<--#e73d4a*/
+}
