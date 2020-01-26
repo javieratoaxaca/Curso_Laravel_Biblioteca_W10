@@ -17,16 +17,18 @@
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
+            <!--
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
-            </a>
+            </a>-->
+            <!--
             <ul class="dropdown-menu">
               <li class="header">You have 4 messages</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <! inner menu: contains the actual data
                 <ul class="menu">
-                  <li><!-- start message -->
+                  <li><! start message
                     <a href="#">
                       <div class="pull-left">
                         <img src="{{asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle" alt="User Image">
@@ -38,14 +40,15 @@
                       <p>Why not buy a new awesome theme?</p>
                     </a>
                   </li>
-                  <!-- end message -->
+                  <!-end message
                 </ul>
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
             </ul>
-          </li>
+          </li>-->
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu">
+              <!--
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
@@ -53,7 +56,7 @@
             <ul class="dropdown-menu">
               <li class="header">You have 10 notifications</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-inner menu: contains the actual data
                 <ul class="menu">
                   <li>
                     <a href="#">
@@ -64,9 +67,10 @@
               </li>
               <li class="footer"><a href="#">View all</a></li>
             </ul>
-          </li>
+          </li>-->
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
+            <!--
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
               <span class="label label-danger">9</span>
@@ -74,9 +78,9 @@
             <ul class="dropdown-menu">
               <li class="header">You have 9 tasks</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-inner menu: contains the actual data
                 <ul class="menu">
-                  <li><!-- Task item -->
+                  <li><!-Task item
                     <a href="#">
                       <h3>
                         Design some buttons
@@ -89,14 +93,14 @@
                       </div>
                     </a>
                   </li>
-                  <!-- end task item -->
+                  <!- end task item -
                 </ul>
               </li>
               <li class="footer">
                 <a href="#">View all tasks</a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -104,16 +108,16 @@
               <span class="hidden-xs">Oscar Larios</span>
             </a>
             <ul class="dropdown-menu">
-              <!-- User image -->
+              <!-- User image
               <li class="user-header">
                 <img src="{{asset("assets/$theme/dist/img/user2-160x160.jpg")}}" class="img-circle" alt="User Image">
 
                 <p>
                   Oscar Larios - Web Developer
-                  <!--<small>Member since Nov. 2020</small>-->
+                  <!--<small>Member since Nov. 2020</small>
                 </p>
               </li>
-              <!-- Menu Body -->
+              <!-- Menu Body
               <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">
@@ -127,7 +131,7 @@
                   </div>
                 </div>
               </li>
-              <!-- Menu Footer-->
+              <!-- Menu Footer
               <li class="user-footer">
                 <div class="pull-left">
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
@@ -137,11 +141,11 @@
                 </div>
               </li>
             </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
+          </li> -->
+          <!-- Control Sidebar Toggle Button
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          </li>-->
         </ul>
       </div>
     </nav>

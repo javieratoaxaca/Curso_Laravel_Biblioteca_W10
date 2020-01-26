@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ValidacionMenu;
 use App\Models\Admin\Menu;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -36,13 +37,23 @@ class MenuController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    /*se modifica la libreria de Request para poner las validaciones
     public function guardar(Request $request)
+    {
+        //Esto nos sirve para ver que datos se estan enviando a traves de la ruta que creamos
+        //dd($request->all());
+        /*Aqui ya insertamos los  datos en nuestra tabla de menu a traves de nuestro modelo "Menu"/
+         Menu::create($request->all());
+         return view('admin.menu.crear');
+    }*/
+    public function guardar(ValidacionMenu $request)
     {
         //Esto nos sirve para ver que datos se estan enviando a traves de la ruta que creamos
         //dd($request->all());
         /*Aqui ya insertamos los  datos en nuestra tabla de menu a traves de nuestro modelo "Menu"*/
          Menu::create($request->all());
-         return view('admin.menu.crear');
+         return redirect('admin/menu/crear')->with('mensaje','Menú Creado con Exito');
+         //return view('admin.menu.crear')->with('mensaje','Menú Creado con Exito');
     }
 
     /**
