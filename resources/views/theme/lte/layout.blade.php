@@ -66,6 +66,11 @@
 <script src="{{asset("assets/$theme/bower_components/fastclick/lib/fastclick.js")}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
+<!-- Se inserta la Libreria de jQueryValidation para poner un poco de javascript en nuestro proyecto en la parte de validaciones -->
+<script src="{{asset("assets/js/jquery_validation/jquery.validate.min.js")}}"></script>
+<script src="{{asset("assets/js/jquery_validation/localization/messages_es.min.js")}}"></script>
+<!-- CReacion de mis sentencias o codigo de javascript -->
+<script src="{{asset("assets/js/funciones.js")}}"></script>
 <!-- CReacion de mis sentencias o codigo de javascript -->
 @yield("scripts")
 </body>

@@ -4,6 +4,11 @@
 @section('titulo')
     Sistema Menús
 @endsection
+<!--Aqui estoy colocando el script de javascript para la cuestion de la validacion de los campos que estan en el formularios -->
+@section("scripts")
+<script src="{{asset("assets/pages/scripts/admin/crear.js")}}" type="text/javascript"></script>
+
+@endsection
 <!-- Aqui estoy extendiendo la vista enuna seccion de la vista de view/theme/lte/layout.blade.php -->
 
 @section('contenido')
