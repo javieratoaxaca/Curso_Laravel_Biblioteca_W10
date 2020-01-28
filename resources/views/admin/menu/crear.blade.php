@@ -6,7 +6,7 @@
 @endsection
 <!--Aqui estoy colocando el script de javascript para la cuestion de la validacion de los campos que estan en el formularios -->
 @section("scripts")
-<script src="{{asset("assets/pages/scripts/admin/crear.js")}}" type="text/javascript"></script>
+<script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript"></script>
 
 @endsection
 <!-- Aqui estoy extendiendo la vista enuna seccion de la vista de view/theme/lte/layout.blade.php -->
@@ -20,7 +20,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Seccion de Crear Menús </h3>
             </div>
-        <form action="{{route('guardar-menu')}}" method="POST" id="form-general" class="form-horizontal">
+        <form action="{{route('guardar-menu')}}" method="POST" id="form-general" class="form-horizontal" autocomplete="off">
                 @csrf
                 <div class="box-body ">
                     @include('admin.menu.form')
@@ -30,7 +30,6 @@
                      <div class="col-lg-6">
                         @include('includes.boton-form-crear')
                      </div>
-
                 </div>
             </form>
         </div>

@@ -39,6 +39,8 @@ Route::group(['prefix' => 'admin','namespace'=>'Admin'], function () {
     Route::get('menu/crear', 'MenuController@crear')->name('crear-menu');
     /*Seccion para la Ruta POST de admin/menu */
     Route::post('menu', 'MenuController@guardar')->name('guardar-menu');
+    /*Ruta para guardar el orden del Menu para la Ruta POST admin/menu*/
+    Route::post('menu/guardar-orden', 'MenuController@guardarOrden')->name('guardar-orden');
 });
 
 

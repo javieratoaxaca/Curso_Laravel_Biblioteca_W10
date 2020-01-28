@@ -35,7 +35,8 @@ var Biblioteca=function(){
 
                 },
                 submitHandler: function (form){
-
+                    //para que aqui regrese al menu de crear
+                    return true;
                 }
             });
         },
