@@ -45,7 +45,9 @@ Route::group(['prefix' => 'admin','namespace'=>'Admin'], function () {
     Route::get('rol/{id}/editar', 'RolController@editar')->name('editar_rol');
     Route::put('rol/{id}', 'RolController@actualizar')->name('actualizar_rol');
     Route::delete('rol/{id}','RolController@eliminar')->name('eliminar_rol');
-
+    /*Seccion para las Rutas de Menu_Rol*/
+    Route::get('menu-rol', 'MenuRolController@index')->name('menu_rol');  /*Seccion para la Ruta GET de admin/rol */
+    Route::post('menu-rol','MenuRolController@guardar')->name('guardar_menu_rol');/*Seccion para la Ruta POST de admin/rol   */
 });
 
 

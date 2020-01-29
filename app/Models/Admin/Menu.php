@@ -12,6 +12,13 @@ class Menu extends Model
     protected $fillable=['nombre','url','icono'];
     //Cuales son los campos que no puedan modificar
     protected $guarded=['id'];
+    /*Creacion de una funcion para maneja los ide entre tablas */
+    public function roles(){
+        //aqui esta haciendo una relacion de mi modelo de Rol con la tabla de Menu_rol c
+        //esta haciendo la conexion de muchos a muchos de la tabla rol y la tabla menu_rol (Tabla:Rol:id =>> menu_rol:Menu_rol:Tabla)
+        return $this->belongsToMany(Rol::class,'menu_rol');
+
+    }
 
     /* Hecha por mi
     public function getHijos($padres,$line){
