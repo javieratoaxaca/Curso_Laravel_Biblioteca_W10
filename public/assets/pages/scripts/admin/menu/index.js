@@ -14,6 +14,7 @@ $(document).ready(function () {
             }
         });
     });
+
     //este parte del codigo es para contraer el Menu que estamos elaborando
     $('#nestable').nestable('collapseAll');
     //este parte del codigo es para expandir el Menu que estamos elaborando
@@ -37,4 +38,6 @@ $(document).ready(function () {
     })
 
     $('#nestable').nestable('expandAll');*/
+
 });
+

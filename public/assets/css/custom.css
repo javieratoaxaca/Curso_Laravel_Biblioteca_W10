@@ -1,5 +1,21 @@
 /*Aqui creo la  opcion de requerido que se manejara dentro de mi clase que esta en mi admin.menu.crear*/
-label.requerido::after{
+label.requerido:after{
     content: " *";
     color: darkred; /* color:<--#e73d4a*/
+}
+
+/*Aquie creo las opciones para la edicion*/
+.btn-accion-tabla{
+    cursor: pointer;
+    border:none;
+    background: 0;
+    padding: 0 0 0 5px;
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+.d-inline{
+display: inline;
+}
+.width70{
+    width: 70px !important;
 }

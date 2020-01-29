@@ -19,6 +19,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/skins/_all-skins.min.css")}}">
+<!--este es complemento del plugin de js de ToasTr-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   @yield("styles")
   <!--Aquie creo mi link para acceso a mi CSS personalizado-->
   <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
@@ -71,6 +73,12 @@
 <!-- Se inserta la Libreria de jQueryValidation para poner un poco de javascript en nuestro proyecto en la parte de validaciones -->
 <script src="{{asset("assets/js/jquery_validation/jquery.validate.min.js")}}"></script>
 <script src="{{asset("assets/js/jquery_validation/localization/messages_es.min.js")}}"></script>
+<!--Aqui es para mandar los mensajes de alerta(Sweet-Alert) cuando eliminas algun elemento de la base  -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!--Aquie es para mandar los mensajes de alerta a un costado de la libreria toastr.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<!--Creacion de las Sentencias para el ToolTips que viene con BootStrap -->
+<script src="{{asset("assets/js/scripts.js")}}"></script>
 <!-- CReacion de mis sentencias o codigo de javascript -->
 <script src="{{asset("assets/js/funciones.js")}}"></script>
 <!-- CReacion de mis sentencias o codigo de javascript -->

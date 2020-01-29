@@ -33,14 +33,19 @@ Route::group(['prefix' => 'admin','namespace'=>'Admin'], function () {
     Route::get('permiso/editar', 'PermisoController@editar')->name('editar-permiso');
     Route::get('permiso/actualizar', 'PermisoController@actualizar')->name('actualizar-permiso');
     Route::get('permiso/eliminar', 'PermisoController@eliminar')->name('eliminar-permiso');
-    /*Seccion para la Rutas POST de admin/permiso */
-    /*Seccion para la Ruta GET de admin/menu */
-    Route::get('menu', 'MenuController@index')->name('menu');
+    /*Seccion para la Rutas GET/POST de admin/menu */
+    Route::get('menu', 'MenuController@index')->name('menu');  /*Seccion para la Ruta GET de admin/menu */
     Route::get('menu/crear', 'MenuController@crear')->name('crear-menu');
-    /*Seccion para la Ruta POST de admin/menu */
-    Route::post('menu', 'MenuController@guardar')->name('guardar-menu');
-    /*Ruta para guardar el orden del Menu para la Ruta POST admin/menu*/
-    Route::post('menu/guardar-orden', 'MenuController@guardarOrden')->name('guardar-orden');
+    Route::post('menu', 'MenuController@guardar')->name('guardar-menu');/*Seccion para la Ruta POST de admin/menu */
+    Route::post('menu/guardar-orden', 'MenuController@guardarOrden')->name('guardar-orden');/*Ruta para guardar el orden del Menu para la Ruta POST admin/menu*/
+    /*Seccion para las Rutas de ROL */
+    Route::get('rol', 'RolController@index')->name('rol');  /*Seccion para la Ruta GET de admin/rol */
+    Route::get('rol/crear', 'RolController@crear')->name('crear_rol');
+    Route::post('rol', 'RolController@guardar')->name('guardar_rol');/*Seccion para la Ruta POST de admin/rol   */
+    Route::get('rol/{id}/editar', 'RolController@editar')->name('editar_rol');
+    Route::put('rol/{id}', 'RolController@actualizar')->name('actualizar_rol');
+    Route::delete('rol/{id}','RolController@eliminar')->name('eliminar_rol');
+
 });
 
 
