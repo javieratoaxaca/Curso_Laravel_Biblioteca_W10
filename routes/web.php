@@ -22,9 +22,13 @@
 })->where( 'nombre','[A-Za-z]+')->where('id','[0-9]+')->name('permiso');*/
 
 //Ruta Principal
-Route::get('/','InicioController@index');
+Route::get('/','InicioController@index')->name('inicio');
+Route::get('seguridad/login','Seguridad\LoginController@index')->name('login');
+Route::post('seguridad/login','Seguridad\LoginController@login')->name('login_post');
 //Ruta de acceso del administrador por medio de grupos para poner prefijos
-Route::group(['prefix' => 'admin','namespace'=>'Admin'], function () {
+Route::group(['prefix' => 'admin','namespace'=>'Admin','middleware'=>'auth'], function () {
+    /*Seccion de la rutas Get de Usuarios*/
+    Route::get('', 'AdminController@index');
     /*Seccion para la Rutas GET de admin/permiso */
     Route::get('permiso', 'PermisoController@index')->name('permiso');
     Route::get('permiso/crear', 'PermisoController@crear')->name('crear-permiso');
