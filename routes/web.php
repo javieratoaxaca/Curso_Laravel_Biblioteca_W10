@@ -25,8 +25,9 @@
 Route::get('/','InicioController@index')->name('inicio');
 Route::get('seguridad/login','Seguridad\LoginController@index')->name('login');
 Route::post('seguridad/login','Seguridad\LoginController@login')->name('login_post');
+Route::get('seguridad/logout','Seguridad\LoginController@logout')->name('logout');
 //Ruta de acceso del administrador por medio de grupos para poner prefijos
-Route::group(['prefix' => 'admin','namespace'=>'Admin','middleware'=>'auth'], function () {
+Route::group(['prefix' => 'admin','namespace'=>'Admin','middleware'=>['auth','superadmin']], function () {
     /*Seccion de la rutas Get de Usuarios*/
     Route::get('', 'AdminController@index');
     /*Seccion para la Rutas GET de admin/permiso */
